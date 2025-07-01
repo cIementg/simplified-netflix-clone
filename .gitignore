@@ -1,0 +1,28 @@
+# Backend
+api/target/
+api/.mvn
+api/mvn*
+!api/mvnw
+!api/mvnw.cmd
+api/*.log
+api/*.gz
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db 
