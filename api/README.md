@@ -1,51 +1,62 @@
-# API Netflix Clone
+# Simplified Netflix Clone API
 
-API REST développée avec Spring Boot pour gérer les films et les catégories.
+REST API developed with Spring Boot to manage movies and categories for a simplified Netflix-like platform.
 
 ## Configuration
 
-La configuration de l'application se trouve dans `src/main/resources/application.properties`.
+Application configuration can be found in `src/main/resources/application.properties`.
 
-## Structure de l'API
+## API Structure
 
-### Endpoints Films
+### Movie Endpoints
 
-- `GET /api/movies` : Récupérer tous les films
-- `GET /api/movies/{id}` : Récupérer un film par son ID
-- `POST /api/movies` : Créer un nouveau film
-- `PUT /api/movies/{id}` : Mettre à jour un film
-- `DELETE /api/movies/{id}` : Supprimer un film
+- `GET /api/movies` : Retrieve all movies
+- `GET /api/movies/{id}` : Retrieve a movie by ID
+- `POST /api/movies` : Create a new movie
+- `PUT /api/movies/{id}` : Update a movie
+- `DELETE /api/movies/{id}` : Delete a movie
 
-### Endpoints Catégories
+### Category Endpoints
 
-- `GET /api/categories` : Récupérer toutes les catégories
-- `GET /api/categories/{id}` : Récupérer une catégorie par son ID
-- `POST /api/categories` : Créer une nouvelle catégorie
-- `PUT /api/categories/{id}` : Mettre à jour une catégorie
-- `DELETE /api/categories/{id}` : Supprimer une catégorie
+- `GET /api/categories` : Retrieve all categories
+- `GET /api/categories/{id}` : Retrieve a category by ID
+- `POST /api/categories` : Create a new category
+- `PUT /api/categories/{id}` : Update a category
+- `DELETE /api/categories/{id}` : Delete a category
 
-## Base de données
+## Database
 
-L'application utilise MySQL comme base de données. Le schéma et les données initiales sont définis dans `src/main/resources/data.sql`.
+The application uses MySQL as its database. Schema and initial data are defined in `src/main/resources/data.sql`.
 
-## Développement
+## Development
 
-Pour lancer l'application en mode développement :
+To run the application in development mode:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Pour construire l'application :
+To build the application:
 
 ```bash
 ./mvnw clean package
 ```
 
-## Tests
+## Testing
 
-Pour exécuter les tests :
+To run tests:
 
 ```bash
 ./mvnw test
-``` 
+```
+
+## API Scope
+
+This API is designed for educational purposes and implements core features of a streaming platform in a simplified way. It includes:
+
+- Basic CRUD operations for movies and categories
+- Simple data model with essential fields
+- Basic error handling and validation
+- RESTful architecture principles
+
+Note: This is not intended to be a production-ready streaming service API, but rather a learning tool for understanding API development with Spring Boot. 

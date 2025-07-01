@@ -1,69 +1,70 @@
-# Application Netflix Clone
+# Simplified Netflix Clone
 
-Ce projet est une application de type Netflix clone composée d'une API Spring Boot et d'un frontend React.
+This project is a simplified version of Netflix, built as an educational project. It provides basic streaming platform functionalities with a modern user interface inspired by Netflix.
 
-## Structure du Projet
+## Project Structure
 
-Le projet est divisé en deux parties principales :
+The project is divided into two main parts:
 
-- `api/` : Backend Spring Boot
-- `frontend/` : Frontend React
+- `api/` : Spring Boot Backend
+- `frontend/` : React Frontend
 
-## Prérequis
+## Prerequisites
 
-- Java 17 ou supérieur
-- Node.js 16 ou supérieur
+- Java 17 or higher
+- Node.js 16 or higher
 - Maven
 - MySQL
 
-## Installation et Démarrage
+## Installation and Setup
 
 ### Backend (API)
 
-1. Naviguez dans le dossier api :
+1. Navigate to the api folder:
 ```bash
 cd api
 ```
 
-2. Installez les dépendances avec Maven :
+2. Install dependencies with Maven:
 ```bash
 ./mvnw clean install
 ```
 
-3. Démarrez l'application :
+3. Start the application:
 ```bash
 ./mvnw spring-boot:run
 ```
 
-L'API sera accessible sur `http://localhost:8080`
+The API will be available at `http://localhost:8080`
 
 ### Frontend
 
-1. Naviguez dans le dossier frontend :
+1. Navigate to the frontend folder:
 ```bash
 cd frontend
 ```
 
-2. Installez les dépendances :
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Démarrez l'application :
+3. Start the application:
 ```bash
 npm start
 ```
 
-L'application sera accessible sur `http://localhost:3000`
+The application will be available at `http://localhost:3000`
 
-## Fonctionnalités
+## Key Features
 
-- Affichage des films par catégories
-- Interface d'administration pour la gestion des films et des catégories
-- Design responsive inspiré de Netflix
-- API RESTful pour la gestion des données
+- Browse movies by categories
+- Admin interface for movie and category management
+- Responsive design inspired by Netflix
+- RESTful API for data management
+- Simplified streaming platform functionality
 
-## Technologies Utilisées
+## Technologies Used
 
 ### Backend
 - Spring Boot
@@ -74,4 +75,14 @@ L'application sera accessible sur `http://localhost:3000`
 ### Frontend
 - React
 - Tailwind CSS
-- Axios pour les requêtes HTTP 
+- Axios for HTTP requests
+
+## Project Scope
+
+This is an educational project that implements a simplified version of Netflix. While it mimics some of Netflix's core features, it is not intended to be a full-scale streaming platform. The project focuses on demonstrating fundamental concepts of full-stack development, including:
+
+- REST API development
+- Database management
+- Frontend-Backend integration
+- Modern UI/UX principles
+- Authentication and authorization basics 
